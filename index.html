@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula - Título da Aula</title>
+    <title>Metodologias Ágeis</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
@@ -12,31 +12,37 @@
         .navbar a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
         .container { margin-top: 80px; padding: 20px; text-align: left; max-width: 800px; margin-left: auto; margin-right: auto; }
         h1 { color: #0073e6; }
-        .content img { width: 100%; border-radius: 10px; margin-top: 10px; }
-        .content p { margin-top: 10px; line-height: 1.6; }
-        .content ul { margin-top: 10px; padding-left: 20px; }
-        .content ul li { margin-bottom: 5px; }
+        .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; text-align: center; }
+        .card a { display: block; margin-top: 10px; padding: 10px; background: #0073e6; color: white; text-decoration: none; border-radius: 5px; }
     </style>
 </head>
 <body>
     <div class="navbar">
         <a href="index.html">Início</a>
         <a href="aula1.html">Aula 1</a>
-        <!-- <a href="aula2.html">Aula 2</a>
-        <a href="aula3.html">Aula 3</a> -->
+        <a href="aula2.html">Aula 2</a>
+        <a href="aula3.html">Aula 3</a>
     </div>
     <div class="container">
-        <h1>Título da Aula</h1>
-        <div class="content">
-            <p>Descrição da aula e objetivos.</p>
-            <img src="https://via.placeholder.com/800x400" alt="Imagem ilustrativa da aula">
-            <h2>Materiais e Referências</h2>
-            <ul>
-                <li><a href="#" target="_blank">Material 1</a></li>
-                <li><a href="#" target="_blank">Material 2</a></li>
-                <li><a href="#" target="_blank">Material 3</a></li>
-            </ul>
-            <p>Conteúdo detalhado da aula pode ser inserido aqui.</p>
+        <h1>Metodologias Ágeis</h1>
+        <p>Bem-vindo ao portal da disciplina! Aqui você encontrará todo o material necessário.</p>
+        <div class="grid">
+            <div class="card">
+                <h2>Aula 1</h2>
+                <p>Introdução às Metodologias Ágeis</p>
+                <a href="aula1.html">Acessar Aula</a>
+            </div>
+            <div class="card">
+                <h2>Aula 2</h2>
+                <p>Scrum: Fundamentos</p>
+                <a href="aula2.html">Acessar Aula</a>
+            </div>
+            <div class="card">
+                <h2>Aula 3</h2>
+                <p>Kanban e Fluxo de Trabalho</p>
+                <a href="aula3.html">Acessar Aula</a>
+            </div>
         </div>
     </div>
 </body>
