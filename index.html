@@ -11,37 +11,28 @@
         .navbar { background: #0073e6; padding: 15px; position: fixed; width: 100%; top: 0; left: 0; }
         .navbar a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
         .container { margin-top: 80px; padding: 20px; text-align: left; max-width: 800px; margin-left: auto; margin-right: auto; }
-        h1 { color: #0073e6; }
+        h1 { color: #0073e6; text-align: center; }
         .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
         .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 300px; text-align: center; }
-        .card a { display: block; margin-top: 10px; padding: 10px; background: #0073e6; color: white; text-decoration: none; border-radius: 5px; }
+        .dropdown { display: flex; flex-direction: column; }
+        .dropdown a { display: block; margin-top: 10px; padding: 10px; background: #0073e6; color: white; text-decoration: none; border-radius: 5px; }
     </style>
 </head>
 <body>
     <div class="navbar">
         <a href="index.html">Início</a>
-        <a href="aula1.html">Introdução à Engenharia de Software</a>
-        <a href="aula2.html">Aula 2</a>
-        <a href="aula3.html">Aula 3</a>
     </div>
     <div class="container">
         <h1>Metodologias Ágeis</h1>
         <p>Bem-vindo ao portal da disciplina! Aqui você encontrará todo o material necessário.</p>
         <div class="grid">
             <div class="card">
-                <h2>Introdução à Engenharia de Software</h2>
-                <p>Fundamentos e importância da Engenharia de Software</p>
-                <a href="aula1.html">Acessar Aula</a>
-            </div>
-            <div class="card">
-                <h2>Aula 2</h2>
-                <p>Scrum: Fundamentos</p>
-                <a href="aula2.html">Acessar Aula</a>
-            </div>
-            <div class="card">
-                <h2>Aula 3</h2>
-                <p>Kanban e Fluxo de Trabalho</p>
-                <a href="aula3.html">Acessar Aula</a>
+                <h2>Metodologias Ágeis</h2>
+                <p>Conceitos e fundamentos essenciais</p>
+                <div class="dropdown">
+                    <a href="aula1.html">Introdução</a>
+                    <a href="aula2.html">Parte 1</a>
+                </div>
             </div>
         </div>
     </div>
