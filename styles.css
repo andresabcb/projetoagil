@@ -1,0 +1,116 @@
+/* Reset de estilos básicos */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif; 
+}
+
+/* Corpo e Layout */
+body { 
+    background-color: #f4f4f4; 
+    color: #333; 
+    text-align: center; 
+}
+
+/* Navbar */
+.navbar { 
+    background: #0073e6; 
+    padding: 15px; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    left: 0; 
+    display: flex; 
+    justify-content: center;
+}
+
+.navbar a { 
+    color: white; 
+    text-decoration: none; 
+    margin: 0 20px; 
+    font-weight: bold;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover { 
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px; 
+}
+
+/* Container principal */
+.container { 
+    margin-top: 80px; 
+    padding: 20px; 
+    text-align: left; 
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* Título */
+h1 { 
+    color: #0073e6; 
+    text-align: center; 
+}
+
+/* Grid de Cards */
+.grid { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+/* Estilo dos Cards */
+.card { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    width: 300px; 
+    text-align: center; 
+    transition: transform 0.3s;
+}
+
+.card:hover { 
+    transform: scale(1.05); 
+}
+
+/* Botões do dropdown */
+.dropdown { 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.dropdown a { 
+    display: block; 
+    margin-top: 10px; 
+    padding: 10px; 
+    background: #0073e6; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.dropdown a:hover { 
+    background: #005bb5; 
+}
+
+/* Rodapé */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .navbar { flex-direction: column; padding: 10px; }
+    .navbar a { margin: 5px 0; }
+    .grid { flex-direction: column; align-items: center; }
+}
